@@ -54,7 +54,7 @@
         <div class="exercise-section">
             <h3>課題2: パラメータ付きGETルート</h3>
             <p>URLパラメータを受け取るルート</p>
-            <a href="{{ url('user.show', ['id' => 123]) }}" class="btn btn-primary">ユーザーID:123のページへ</a>
+            <a href="{{ url('user', ['id' => 123]) }}" class="btn btn-primary">ユーザーID:123のページへ</a>
             <div class="uri-display">
                 <span class="http-method get">GET</span>{{ url('/user/123') }}
             </div>
@@ -63,7 +63,7 @@
         <div class="exercise-section">
             <h3>課題3: 複数パラメータ付きGETルート</h3>
             <p>複数のURLパラメータを受け取るルート</p>
-            <a href="{{ url('product.show', ['category' => 'electronics', 'id' => 456]) }}" class="btn btn-primary">電子機器カテゴリー、商品ID:456のページへ</a>
+            <a href="{{ url('product', ['category' => 'electronics', 'id' => 456]) }}" class="btn btn-primary">電子機器カテゴリー、商品ID:456のページへ</a>
             <div class="uri-display">
                 <span class="http-method get">GET</span>{{ url('/product/electronics/456') }}
             </div>
